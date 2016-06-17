@@ -29,12 +29,13 @@ body{
 
   #logo{
     float: left;
-    p{
+    a{
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: -1px;
       font-size: 1.2rem;
       color: #397CAC; 
+      text-decoration: none;
 
     }
   }
@@ -49,7 +50,6 @@ body{
       color: white;
       text-decoration: none;
       font-weight: 100;
-
     }
   }
 }
@@ -62,7 +62,7 @@ body{
     margin: 1em 0;
     padding: 1em 0;
     border-bottom: 1px solid #D1d1d1;
-    title{
+    .title{
       margin: 0;
       a{
         color: #397CAC;
