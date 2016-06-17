@@ -2,14 +2,19 @@
 %head
   %title My forum
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  %link{rel:"stylesheet", href: "https://fonts.googleapis.com/css?family=Lato:400,700,300", type: "text/css" }
+  %link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css"}
   = javascript_include_tag 'application', 'data-turbolinks-track' => true 
   = csrf_meta_tags
 
-
 %body
-  %nav 
-    #logo
-      %p My Forum
+  %header.main_header.clearfix
+    .wrapper
+      #logo
+        %p My Forum
+      #buttons
+        = link_to "New Post", new_post_path
+
   .wrapper
     %p.notice=notice
     %p.alert=notice 
