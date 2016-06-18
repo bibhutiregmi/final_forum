@@ -23,6 +23,10 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   background-color: #fff;
+  .alert{
+    color: red;
+    background: #397CAC;
+  }
   div.container{
     padding:3em;
     border-radius: .2em;
@@ -73,6 +77,10 @@ body {
       font-weight: 100;
       padding: .5em 1em;
       border-radius: .2em;
+      float: right;
+      width: 30%;
+      margin-right: 13em;
+      margin-top: 1.5em;
     }
 
   
@@ -97,7 +105,15 @@ body {
       color: #fff;
       margin-top: 2em;
     }
-
+    input[type="submit"] {
+      background: #397CAC;
+      border: none;
+      float: right;
+      color: white;
+      font-weight: 100;
+      padding: .5em 1em;
+      border-radius: .2em;
+    }
    
 
   }
@@ -283,6 +299,7 @@ body {
       .comment_content {
         margin: 0;
         padding: 0;
+        color: #282c2f
       }
       .comment_author {
         color: #397CAC;
