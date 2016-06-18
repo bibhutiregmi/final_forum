@@ -14,15 +14,81 @@
  *= require_self
  */
 
- body {
+body {
   font-family: 'Lato', sans-serif;
-  background: #EDEFF0;
+  background: #397CAC;
  }
-
 .wrapper {
   width: 60%;
   max-width: 1140px;
   margin: 0 auto;
+  background-color: #fff;
+  div.container{
+    padding:3em;
+    border-radius: .2em;
+    input {
+      background: #fff;
+      border: 1px solid #d1d1d1;
+      color: #000;
+      font-weight: 100;
+      border-radius: .2em;
+      width: 30%;
+    }
+    h2 {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #397CAC;
+    margin-top: 0;
+  }
+  div.form-inputs{
+    font-size: 1em;
+    width: 70%;
+    span{
+        color: red;
+        margin-left: .4em;
+      }
+    label{
+      font-size: 1.2em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      abbr {
+        color: red;
+        text-decoration: none;
+      }
+      
+    }
+    input{
+      height: 1.5em;
+      width: 40%;
+      float: right;
+      
+      
+    }
+   
+  }
+  input[type="submit"] {
+      background: #397CAC;
+      border: none;
+      color: white;
+      font-weight: 100;
+      padding: .5em 1em;
+      border-radius: .2em;
+    }
+
+  
+  }
+  #over_all_layout{
+    padding: .5em;
+  }
+  input {
+      background: #fff;
+      border: 1px solid #d1d1d1;
+      color: #000;
+      font-weight: 100;
+      border-radius: .2em;
+      width: 30%;
+
+    }
   input[type="submit"] {
       background: #397CAC;
       border: none;
@@ -32,23 +98,35 @@
       border-radius: .2em;
     }
   textarea {
-      width: 100%;
+      width: 87%;
       min-height: 200px;
       border: 1px solid #d1d1d1;
       border-radius: .2em;
-      margin: 1em 0;
+      margin: 1em;
     }
-    #button {
-      float: right;
-      a {
-        line-height: 60px;
-        background: #397CAC;
-        padding: .5em 1em;
-        border-radius: 0.2em;
-        color: white;
-        text-decoration: none;
-        font-weight: 100;
-      }
+   h1 {
+    font-weight: 100;
+    font-size: 2em;
+    color: #397CAC;
+    margin-top: 0;
+  }
+   h2 {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #397CAC;
+    margin-top: 0;
+  }
+  #button {
+    float: right;
+    a {
+      line-height: 60px;
+      background: #397CAC;
+      padding: .5em 1em;
+      border-radius: 0.2em;
+      color: white;
+      text-decoration: none;
+      font-weight: 100;
+    }
   }
 }
 
@@ -104,13 +182,13 @@
         color: #397CAC;
         text-decoration: none;
         font-weight: 100;
-        font-size: 1.25rem;
+        font-size: 1.50rem;
       }
     }
     .date {
       margin-top: .25rem;
-      font-size: 0.9rem;
-      color: #B2BAC2;
+      font-size: 1rem;
+      color: #646c73;
     }
   }
 }
@@ -123,11 +201,22 @@
   text-decoration: none;
   margin-right: 2%;
 }
+#post_div {
+  background: white;
+  padding: 2em 5%;
+  border-bottom: 8px solid #397CAC;
+  }
 
 #post_content {
   background: white;
   padding: 2em 5%;
   border-radius: .5em;
+ h2 {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #397CAC;
+    margin-top: 0;
+  }
   h1 {
     font-weight: 100;
     font-size: 2em;
@@ -135,8 +224,8 @@
     margin-top: 0;
   }
   p {
-    color: #B2BAC2;
-    font-size: 0.9rem;
+    color: #646c73;
+    font-size: 1rem;
     font-weight: 100;
     line-height: 1.5;
   }
@@ -146,6 +235,10 @@
       border-bottom: 1px solid #d1d1d1;
       padding-bottom: 1em;
       margin-bottom: 1em;
+      font-size: 0.9em;
+    }
+
+      
       .content {
         width: 75%;
         float: left;
@@ -172,7 +265,7 @@
       .comment_author {
         color: #397CAC;
         margin-top: .5rem;
-        font-size: 0.6em;
+        font-size: 0.9em;
         font-weight: 700;
       }
     }
@@ -191,6 +284,6 @@
       border-radius: .2em;
       margin: 1em 0;
     }
-  }
+  
 
 }
