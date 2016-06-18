@@ -45,7 +45,7 @@ body {
     width: 70%;
     span{
         color: red;
-        margin-left: .4em;
+        margin-left: .3em;
       }
     label{
       font-size: 1.2em;
@@ -79,6 +79,27 @@ body {
   }
   #over_all_layout{
     padding: .5em;
+    font-size: 1em;
+    background: #397CAC;
+    h1{
+      color: #fff;
+      margin-left: .5em;
+    }
+    input{
+      margin-bottom: 1em;
+      margin-top: 1em;
+      width: 97%;
+      float: right;
+      height: 1.5em;
+    }
+    label{
+      margin-left: 1em;
+      color: #fff;
+      margin-top: 2em;
+    }
+
+   
+
   }
   input {
       background: #fff;
@@ -233,7 +254,8 @@ body {
   #comments {
     .comment {
       border-bottom: 1px solid #d1d1d1;
-      padding-bottom: 1em;
+      padding: 1em;
+      background: #dbe8f1;
       margin-bottom: 1em;
       font-size: 0.9em;
     }
@@ -282,7 +304,7 @@ body {
       min-height: 200px;
       border: 1px solid #d1d1d1;
       border-radius: .2em;
-      margin: 1em 0;
+      margin: .5em 0;
     }
   
 
