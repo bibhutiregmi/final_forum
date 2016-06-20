@@ -4,8 +4,12 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   resources :posts do
     resources :comments
+   # resources :profile
   end
+  resources :profile
   root 'posts#index'
+
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

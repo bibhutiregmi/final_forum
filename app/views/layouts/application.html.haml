@@ -5,7 +5,9 @@
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   %link{rel:"stylesheet", href: "https://fonts.googleapis.com/css?family=Lato:400,700,300", type: "text/css" }
   %link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css"}
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true 
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = stylesheet_link_tag 'posts'
+  / = stylesheet_link_tag 'profile'
   = csrf_meta_tags
 
 %body
@@ -13,15 +15,26 @@
     .wrapper
       #logo
         %p= link_to "My Forum" ,root_path
+
+
       #buttons
         -if user_signed_in?
+          = link_to "My Profile", profile_index_path
           = link_to "New Post", new_post_path
           = link_to "Sign Out", destroy_user_session_path, method: 'delete'
+          #loggedin
+            logged in as
+            = link_to current_user.email, profile_index_path
+
         -else
-          = link_to "Sign Up", new_user_registration_path  
+          = link_to "Sign Up", new_user_registration_path
           = link_to "Sign In", new_user_session_path
 
+      #text
+        / Signed in as  %p= current_user.email
+        / logged in as link_to current_user.email , profile_index_path
+
   .wrapper
-    %p.alert=notice 
+    %p.alert=notice
   .wrapper
     = yield
